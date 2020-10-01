@@ -27,4 +27,4 @@ The following should install the required packages:
 pip3 install -r requirements.txt
 ```
 
-According to your python3 installation, you may require `pip` instead of `pip3`.# MobilitySEIRD-France
+According to your python3 installation, you may require `pip` instead of `pip3`.
