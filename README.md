@@ -1,12 +1,6 @@
-# Code for the paper "Using mobility data in the design of optimal lockdown strategies for the COVID-19 pandemic in England" 
+# Code for the paper "Using mobility data in the design of optimal lockdown strategies for the COVID-19 pandemic" 
 
-The preprint can be found at: 
-
-https://arxiv.org/pdf/2006.16059.pdf
-
-Please also check the companion website, where updates on subsequent research will be described: 
-
-https://optimallockdown.github.io/Covid19inEngland/
+We report here code, data and results for France; inference is done with data until 31st August.
 
 ## Content
 The content of this repository is as follows: 
@@ -15,8 +9,8 @@ The content of this repository is as follows:
 - `plot_routines` contains some scripts to produce plots in the paper.
 - `results` contains the `.jrl` files used to store the inference results in the ABCpy library, together with some figures.
 - `src` contains source code, with model definition and various utilities functions.
-- `Datasets.ipynb` is a jupyter notebook describing the data sources and the data processing operations before fitting the model. 
-- `inference_SEI4RD_england_data.py` is the script performing model fit; can be used with MPI parallelization by uncommenting one line. 
+- `Dataset_France.py` is the Python script formatting the data before inference can be done.  
+- `inference_SEI4RD_france_data.py` is the script performing model fit; can be used with MPI parallelization by uncommenting one line. 
 - `optimal_control_posterior_mean.py` is the script performing optimal control under uncertainty, together with the definition of several functions to perform optimal control in specific cases. 
 
 ## Requirements
