@@ -25,8 +25,8 @@ training_data_folder = "data/france_inference_data_1Mar_to_31Aug/"
 most_recent_data_folder = "data/france_inference_data_1Mar_to_31Aug/"
 
 if date_to_use == '31/08':
-    journal_folder = "results/PMCABC/real_data/SEI4RD_france_infer_1Mar_31Aug/"
-    images_folder = "results/PMCABC/real_data/SEI4RD_france_infer_1Mar_31Aug/"
+    journal_folder = "results/SEI4RD_france_infer_1Mar_31Aug/"
+    images_folder = "results/SEI4RD_france_infer_1Mar_31Aug/"
     jrnl = Journal.fromFile(journal_folder + "journal_5.jrl")
     mobility_home = np.load(training_data_folder + "mobility_home.npy")
     T_training = mobility_home.shape[0]
@@ -97,12 +97,12 @@ if date_to_use == '31/08':
     end_step = T_most_recent_data + 7  # date until which to show predictions
     end_step_observation = T_most_recent_data  # date until which to show the actual values
 return_observation_only_hospitalized = True
-plot_posteriors_splitted = True
-plot_posteriors_rhos = False
+plot_posteriors_splitted = False
+plot_posteriors_rhos = True
 plot_posteriors_all = False
-plot_posteriors_marginals = False
-plot_violinplots = False
-plot_trajectories = True
+plot_posteriors_marginals = True
+plot_violinplots = True
+plot_trajectories = False
 plot_posterior_mean_traj = False
 CI_size = 99
 seed = 1
